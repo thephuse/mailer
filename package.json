@@ -1,0 +1,28 @@
+{
+  "name": "mailer",
+  "version": "1.0.0",
+  "description": "An open-source emailer workflow designed to take the pain out of building HTML and CSS mailers.",
+  "private": "true",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:thephuse/mailer.git"
+  },
+  "scripts": {
+    "copy": "gulp copy",
+    "build": "gulp build",
+    "test": "gulp test",
+    "watch": "gulp"
+  },
+  "author": "Phuse.ca",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-email-builder": "^1.0.4",
+    "gulp-empty": "^0.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-stylus": "^2.2.0"
+  }
+}
