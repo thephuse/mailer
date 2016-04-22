@@ -20,10 +20,10 @@ function build(options, replaceLinks) {
     .pipe(gulp.dest('temp/'));
 
   return gulp.src('src/jade/index.jade')
-    .pipe(jade())
+    .pipe(jade({pretty: true}))
     .pipe(gulp.dest('temp/'))
-    .pipe(emailBuilder(emailBuilderOptions))
     .pipe(replaceProxy('assets/', settings.assetsURL))
+    .pipe(emailBuilder(emailBuilderOptions))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('dist/'));
 
